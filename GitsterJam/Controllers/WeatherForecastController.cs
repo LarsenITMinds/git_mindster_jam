@@ -19,11 +19,11 @@ namespace GitsterJam.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<ActionResult<IEnumerable<WeatherForecast>>> Get()
         {
-            return Ok(await _weatherService.GetForecast());
+            return Ok(await _weatherService.GetForecast(5));
         }
 
         [HttpGet]
-        [Route("magic")]
+        [Route("magicxxx")]
         public async Task<ActionResult<string>> GetMagic()
         {
             return Ok(await _weatherService.GetMagic());
