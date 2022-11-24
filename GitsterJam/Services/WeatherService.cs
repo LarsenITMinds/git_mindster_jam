@@ -19,13 +19,12 @@
             "Warm",
             "Sweltering",
             "Scorching",
-            "Liquid Lava"
+            "Liquid Lava",
+            "WeAreAwesome"
         };
 
         public async Task<IEnumerable<WeatherForecast>> GetForecast(int amount)
         {
-
-
             var summaries = Enumerable.Range(1, amount)
                 .Select(index => new WeatherForecast
                 {
