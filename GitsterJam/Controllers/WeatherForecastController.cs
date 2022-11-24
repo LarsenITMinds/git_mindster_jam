@@ -21,5 +21,12 @@ namespace GitsterJam.Controllers
         {
             return Ok(await _weatherService.GetForecast());
         }
+
+        [HttpGet]
+        [Route("magic")]
+        public async Task<ActionResult<string>> GetMagic()
+        {
+            return Ok(await _weatherService.GetMagic());
+        }
     }
 }

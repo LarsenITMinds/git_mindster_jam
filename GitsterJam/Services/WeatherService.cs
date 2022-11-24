@@ -3,6 +3,7 @@
     public interface IWeatherService
     {
         Task<IEnumerable<WeatherForecast>> GetForecast();
+        Task<string> GetMagic();
     }
 
     public class WeatherService : IWeatherService
@@ -21,6 +22,12 @@
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
            .ToArray());
+        }
+
+        public async Task<string> GetMagic()
+        {
+            var jnadw = "Hey";
+            return await Task.FromResult(jnadw);
         }
     }
 }
