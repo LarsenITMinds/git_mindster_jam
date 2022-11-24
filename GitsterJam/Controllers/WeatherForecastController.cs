@@ -20,6 +20,7 @@ namespace GitsterJam.Controllers
         public async Task<ActionResult<IEnumerable<WeatherForecast>>> Get()
         {
             return Ok(await _weatherService.GetForecast());
+
         }
     }
 }
