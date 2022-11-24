@@ -17,8 +17,6 @@
             "Cool",
             "Mild",
             "Warm",
-            "Balmy",
-            "Hot",
             "Sweltering",
             "Scorching",
             "Liquid Lava"
