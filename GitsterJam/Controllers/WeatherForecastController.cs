@@ -19,7 +19,7 @@ namespace GitsterJam.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<ActionResult<IEnumerable<WeatherForecast>>> Get()
         {
-            return Ok(await _weatherService.GetForecast());
+            return Ok(await _weatherService.GetForecast(5));
         }
 
         [HttpGet]
@@ -27,6 +27,13 @@ namespace GitsterJam.Controllers
         public async Task<ActionResult<string>> GetMagic()
         {
             return Ok(await _weatherService.GetMagic());
+        }
+
+        [HttpGet]
+        [Route("demo")]
+        public async Task<ActionResult<string>> GetDemo()
+        {
+            return Ok("Live coding is so easy");
         }
     }
 }
