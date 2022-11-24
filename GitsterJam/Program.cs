@@ -1,4 +1,5 @@
 using GitsterJam;
+using GitsterJam.Services;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.OpenApi.Models;
 
@@ -18,6 +19,9 @@ builder.Services.AddSwaggerGen(options =>
         Description = "This API exposes nothing, to support the Mindster Jam presentation"
     });
 });
+
+// Add services to the container
+builder.Services.AddTransient<IWeatherService, WeatherService>();
 
 var app = builder.Build();
 
