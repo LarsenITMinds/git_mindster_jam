@@ -10,7 +10,18 @@
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Solid Ice",
+            "Freezing",
+            "Bracing",
+            "Chilly",
+            "Cool",
+            "Mild",
+            "Warm",
+            "Balmy",
+            "Hot",
+            "Sweltering",
+            "Scorching",
+            "Liquid Lava"
         };
 
         public async Task<IEnumerable<WeatherForecast>> GetForecast()
